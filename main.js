@@ -22,7 +22,7 @@ const INT_PRICE_ALL = INT_ORANGES + INT_APPLES + INT_MELONS;
 console.log(`Сума товарів без копійок: ${INT_PRICE_ALL}`);
 
 //Заокруглення до сотень
-const ROUNDED_SUM = (ORANGES + APPLES + MELONS).toFixed(2);
+const ROUNDED_SUM = PRICE_ALL.toFixed(2);
 const FINAL_ROUNDED_SUM = Math.round(+ROUNDED_SUM / 100) * 100;
 console.log(`Сума товарів округлена до сотень: ${FINAL_ROUNDED_SUM}`);
 
