@@ -29,7 +29,8 @@ console.log(`Сума товарів округлена до сотень: ${FIN
 //Парність числа
 const EVEN = INT_PRICE_ALL % 2;
 if (EVEN == 0) {
-   console.log(`Парність числа: + ${EVEN}`);
+   const IS_TRUE = true;
+   console.log(`Парність числа: ${IS_TRUE} `);
 } else {
    console.log("number not even");
 }
