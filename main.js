@@ -29,10 +29,9 @@ console.log(`Сума товарів округлена до сотень: ${FIN
 //Парність числа
 const EVEN = INT_PRICE_ALL % 2;
 if (EVEN == 0) {
-   const IS_TRUE = true;
-   console.log(`Парність числа: ${IS_TRUE} `);
+   console.log(`Парність числа: true `);
 } else {
-   console.log("number not even");
+   console.log(`number not even`);
 }
 
 //Здача з 500
