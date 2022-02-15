@@ -51,5 +51,5 @@ const DISCOUNTED_PAY = PRICE_ALL - (PRICE_ALL * (DISCOUNT / 100));
 console.log(`Ціна товару з рандомною знижкою ${DISCOUNTED_PAY.toFixed(2)}`);
 
 //Чистий прибуток
-const NET_PROFIT = (PRICE_ALL / 2) - DISCOUNTED_PAY;
+const NET_PROFIT = (PRICE_ALL / 2) - (PRICE_ALL * (DISCOUNT / 100));
 console.log(`Чистий прибуток: ${NET_PROFIT}`);
