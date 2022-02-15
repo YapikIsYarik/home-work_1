@@ -47,9 +47,8 @@ const DISCOUNT = Math.round(Math.random() * 100);
 console.log(`Рандомна знижка: ${DISCOUNT + "%"}`);
 
 //Ціна товару зі знижкою
-const DISCOUNTED_PAY = PRICE_ALL - (PRICE_ALL * (DISCOUNT / 100));
-console.log(`Ціна товару з рандомною знижкою ${DISCOUNTED_PAY.toFixed(2)}`);
-
+const DISCOUNTED_PAY = (PRICE_ALL - (PRICE_ALL * (DISCOUNT / 100))).toFixed(2);
+console.log(`Ціна товару з рандомною знижкою ${DISCOUNTED_PAY}`);
 //Чистий прибуток
 const NET_PROFIT = (PRICE_ALL / 2) - (PRICE_ALL * (DISCOUNT / 100));
 console.log(`Чистий прибуток: ${NET_PROFIT}`);
