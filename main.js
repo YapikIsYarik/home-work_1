@@ -31,7 +31,7 @@ const EVEN = INT_PRICE_ALL % 2;
 if (EVEN == 0) {
    console.log(`Парність числа: true `);
 } else {
-   console.log(`number not even`);
+   console.log("number not even");
 }
 
 //Здача з 500
@@ -47,8 +47,9 @@ const DISCOUNT = Math.round(Math.random() * 100);
 console.log(`Рандомна знижка: ${DISCOUNT + "%"}`);
 
 //Ціна товару зі знижкою
-const DISCOUNTED_PAY = (PRICE_ALL - (PRICE_ALL * (DISCOUNT / 100))).toFixed(2);
+const DISCOUNTED_PAY = (PRICE_ALL - PRICE_ALL * (DISCOUNT / 100)).toFixed(2);
 console.log(`Ціна товару з рандомною знижкою ${DISCOUNTED_PAY}`);
+
 //Чистий прибуток
-const NET_PROFIT = (PRICE_ALL / 2) - (PRICE_ALL * (DISCOUNT / 100));
+const NET_PROFIT = PRICE_ALL / 2 - PRICE_ALL * (DISCOUNT / 100);
 console.log(`Чистий прибуток: ${NET_PROFIT}`);
