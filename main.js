@@ -22,13 +22,13 @@ const INT_PRICE_ALL = INT_ORANGES + INT_APPLES + INT_MELONS;
 console.log(`Сума товарів без копійок: ${INT_PRICE_ALL}`);
 
 //Заокруглення до сотень
-const ROUNDED_SUM = +ORANGES.toFixed(2) + +APPLES.toFixed(2) + +MELONS.toFixed(2);
-const FINAL_ROUNDED_SUM = Math.round(ROUNDED_SUM / 100) * 100;
+const ROUNDED_SUM = (ORANGES + APPLES + MELONS).toFixed(2);
+const FINAL_ROUNDED_SUM = Math.round(+ROUNDED_SUM / 100) * 100;
 console.log(`Сума товарів округлена до сотень: ${FINAL_ROUNDED_SUM}`);
 
 //Парність числа
 const EVEN = INT_PRICE_ALL % 2;
-if (EVEN == 0) {
+if (EVEN === 0) {
    console.log(`Парність числа: true `);
 } else {
    console.log("number not even");
@@ -39,7 +39,7 @@ const CHANGES = 500 - PRICE_ALL;
 console.log(`Здача з 500: ${CHANGES}`);
 
 //Середнє значення до сотень
-const AVARAGE_PRICE = ((ORANGES + APPLES + MELONS) / 3).toFixed(2);
+const AVARAGE_PRICE = (PRICE_ALL / 3).toFixed(2);
 console.log(`Середнє значення цін до сотень: ${AVARAGE_PRICE}`);
 
 //рандомна знижка від 0 до 100%
